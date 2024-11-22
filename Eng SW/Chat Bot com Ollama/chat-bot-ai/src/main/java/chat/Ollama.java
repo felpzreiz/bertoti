@@ -2,26 +2,28 @@ package chat;
 
 import io.github.ollama4j.OllamaAPI;
 import io.github.ollama4j.exceptions.OllamaBaseException;
-import io.github.ollama4j.exceptions.ToolInvocationException;
-import io.github.ollama4j.models.OllamaResult;
-import io.github.ollama4j.tools.OllamaToolsResult;
-import io.github.ollama4j.tools.Tools;
-import io.github.ollama4j.types.OllamaModelType;
+import io.github.ollama4j.models.response.OllamaResult;
 import io.github.ollama4j.utils.OptionsBuilder;
 
 import java.io.IOException;
-import java.util.Arrays;
 
 public class Ollama {
     String host = "http://localhost:11434/";
 
-    public String getOllamaResponse(String prompt) throws OllamaBaseException, IOException, InterruptedException {
-        OllamaAPI ollamaAPI = new OllamaAPI(host);
+    public String getOllamaResponse(String text) throws OllamaBaseException, IOException, InterruptedException {
 
-        ollamaAPI.setRequestTimeoutSeconds(200);
+        OllamaAPI api = new OllamaAPI(host);
 
-        OllamaResult result = ollamaAPI.generate("gemma2:2b", prompt, true, new OptionsBuilder().build());
+        OptionsBuilder options = new OptionsBuilder();
+        options.setTemperature(0.3F);  // Menos aleatório, mais criativo
+        options.setTopP(0.9F);         // Mais coerentes
+        api.setRequestTimeoutSeconds(300);
+        OllamaResult result = api.generate("gemma2:2b", text, true, options.build());
         return result.getResponse();
     }
+
 }
+
+
+
 
