@@ -27,9 +27,9 @@ class RestApiDemoController {
 
     public RestApiDemoController() {
         pokemons.addAll(List.of(
-                new Pokemon("Charmander", "Fire"),
-                new Pokemon("Squirtle", "Water"),
-                new Pokemon("Bulbasaur", "Plant")
+                new Pokemon("Charmander", "Fire", null),
+                new Pokemon("Squirtle", "Water", null),
+                new Pokemon("Bulbasaur", "Grass", "Poison")
         ));
     }
 
@@ -47,7 +47,7 @@ class RestApiDemoController {
 
     @PostMapping
     Pokemon postPokemon(@RequestBody Pokemon pokemon) {
-        Pokemon novoPokemon = new Pokemon(pokemon.getName(), pokemon.getType());
+        Pokemon novoPokemon = new Pokemon(pokemon.getName(), pokemon.getType1(), pokemon.getType2());
         pokemons.add(novoPokemon);
         return novoPokemon;
     }
@@ -57,13 +57,13 @@ class RestApiDemoController {
         for (int i = 0; i < pokemons.size(); i++) {
             if (pokemons.get(i).getId().equals(id)) {
                 pokemons.get(i).setName(pokemon.getName());
-                pokemons.get(i).setType(pokemon.getType());
+                pokemons.get(i).setType1(pokemon.getType1());
+                pokemons.get(i).setType2(pokemon.getType2());
                 return new ResponseEntity<>(pokemons.get(i), HttpStatus.OK);
             }
         }
 
-        // Se não existir, criamos um novo Pokémon com ID gerado automaticamente
-        Pokemon novoPokemon = new Pokemon(pokemon.getName(), pokemon.getType());
+        Pokemon novoPokemon = new Pokemon(id, pokemon.getName(), pokemon.getType1(), pokemon.getType2());
         pokemons.add(novoPokemon);
         return new ResponseEntity<>(novoPokemon, HttpStatus.CREATED);
     }

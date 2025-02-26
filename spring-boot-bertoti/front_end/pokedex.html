@@ -4,18 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokémon API</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-<h1>Pokémon API</h1>
 
-<h2>Adicionar Pokémon</h2>
-<input type="text" id="pokemonName" placeholder="Nome">
-<input type="text" id="pokemonType" placeholder="Tipo">
-<button onclick="addPokemon()">Adicionar</button>
+<h1>Pokemon Notebook</h1>
+
+<p>Adicionar Pokémon:</p>
+<input type="text" id="pokemonName" placeholder="Nome"><br>
+<select id="pokemonType1">
+    <option value="">Escolha o primeiro tipo</option>
+    <option value="Fire">Fogo</option>
+    <option value="Water">Água</option>
+    <option value="Grass">Planta</option>
+    <option value="Electric">Elétrico</option>
+    <option value="Flying">Voador</option>
+    <option value="Ghost">Fantasma</option>
+    <option value="Psychic">Psíquico</option>
+    <option value="Ice">Gelo</option>
+    <option value="Dragon">Dragão</option>
+    <option value="Steel">Metal</option>
+    <option value="Dark">Noturno</option>
+</select><br>
+<select id="pokemonType2">
+    <option value="">Escolha o segundo tipo (opcional)</option>
+    <option value="Fire">Fogo</option>
+    <option value="Water">Água</option>
+    <option value="Grass">Planta</option>
+    <option value="Electric">Elétrico</option>
+    <option value="Flying">Voador</option>
+    <option value="Ghost">Fantasma</option>
+    <option value="Psychic">Psíquico</option>
+    <option value="Ice">Gelo</option>
+    <option value="Dragon">Dragão</option>
+    <option value="Steel">Metal</option>
+    <option value="Dark">Noturno</option>
+</select><br><br>
+<button id="addPokemon">Adicionar</button>
 
 <h2>Lista de Pokémons</h2>
 <ul id="pokemonList"></ul>
-<script src="script.js"></script>
+
+<script src="script/script.js"></script>
 </body>
 </html>
