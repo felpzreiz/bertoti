@@ -1,6 +1,6 @@
-package padrao;
+package antipadrao;
 
-public class Cliente implements Emprestimo {
+public class Cliente extends Emprestimo{
     private String nome;
     private String cpf;
     private String email;
@@ -32,7 +32,6 @@ public class Cliente implements Emprestimo {
         this.saldo = saldoInicial;
     }
 
-    @Override
     public void emprestar(Double valor) {
         if (emprestimoPermission) {
             if (valor != null && valor > 0) {

@@ -1,9 +1,11 @@
-package padrao;
+package antipadrao;
+
+import padrao.Cliente;
 
 public class Main {
     public static void main(String[] args) {
 
-        Cliente cliente = new Cliente(
+        padrao.Cliente cliente = new Cliente(
                 "Felipe",
                 "123.456.789-00",
                 "felipe@email.com",
@@ -11,7 +13,7 @@ public class Main {
                 0.0
         );
 
-        cliente.setEmprestimoPermission(false);
+        cliente.setEmprestimoPermission(true);
 
         cliente.emprestar(1000.0);
         cliente.emprestar(500.0);
