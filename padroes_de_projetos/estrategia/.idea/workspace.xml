@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b54d8260-aa7b-4b5f-a860-1c3b5eb18dbc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/antipadrao/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/padrao/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/padrao/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/padrao/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/padrao/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +46,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="antipadrao" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -66,7 +69,7 @@
       <updated>1755048637528</updated>
       <workItem from="1755048638565" duration="559000" />
       <workItem from="1755125924080" duration="63000" />
-      <workItem from="1755126001598" duration="4379000" />
+      <workItem from="1755126001598" duration="6367000" />
     </task>
     <servers />
   </component>
