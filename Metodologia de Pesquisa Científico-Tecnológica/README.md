@@ -6,12 +6,70 @@ Durante o curso de Tecnologia em Banco de Dados foram desenvolvidas atividades e
 
 O decorrer do tecnólogo não se restringiu às aulas teóricas e aos laboratórios práticos, sendo orientado também pela metodologia de API (Aprendizagem por Projetos Integrados), por meio da qual foram desenvolvidos projetos aplicados a demandas reais de empresas de tecnologia. Essa abordagem possibilitou a integração entre teoria e prática, promovendo a vivência em situações que simulam o ambiente profissional, favorecendo o trabalho em equipe, a adoção de boas práticas de desenvolvimento e a busca por soluções inovadoras para problemas concretos.
 
-## Tecnologias utilizadas
+## 2º - Semestre 2024 - 4
 
-Entre os projetos e atividades realizadas, destacam-se implementações utilizando a linguagem Java, com ênfase em programação orientada a objetos, organização de dados e construção de aplicações funcionais voltadas a diferentes contextos acadêmicos. Além disso, foram exploradas outras tecnologias complementares, como SQL, com maior utilização do PostgreSQL para modelagem, consultas e manutenção de bases de dados, e JavaScript, especialmente por meio do uso do TypeScript e do framework Vue, aplicados ao desenvolvimento de interfaces e funcionalidades voltadas à interação com sistemas.
+Durante o segundo semestre, desenvolvemos uma aplicação para que alunos de uma mesma equipe pudessem se autoavaliar baseado em uma nota geral dada pelo professor para a equipe.
 
-## Contribuições Individuais
+O projeto foi desenvolvido em Java e a interface do projeto foi desenvolvido com JavaFX.
 
+### Contribuições Individuais
+
+<details> 
+    <summary><b>Conexão com o Driver do PostgresSQL para JDBC</b></summary><br><p> 
+    
+        Fui responsável por trabalhar na classe que criava a conexão entre o nosso banco de dados e o código do produto em Java, garantindo que a aplicação conseguisse se comunicar de forma estável com o PostgreSQL por meio do driver JDBC. </p> 
+</details> 
+<br> 
+
+<details> 
+    <summary><b>Classe DAO</b></summary><br> <p>
+        Desenvolvi a classe DAO (Data Access Object), responsável por implementar as operações de CRUD (Create, Read, Update e Delete) no banco de dados. Essa camada foi essencial para separar a lógica de acesso a dados da lógica de negócio, seguindo boas práticas de arquitetura. </p> 
+</details> 
+<br> 
+
+<details> 
+    <summary><b>Liderança da equipe como Scrum Master</b></summary><br> <p> 
+        Atuei como Scrum Master da equipe, organizando as cerimônias ágeis (daily meetings, sprint planning e retrospectivas), auxiliando na remoção de impedimentos e garantindo que o time seguisse os princípios do Scrum. Também promovi a comunicação entre os membros e o foco no cumprimento dos prazos definidos para cada sprint. 
+    </p> 
+</details> <br>
+
+#### <b>Hard Skills</b>
+
+- Java Development: Implementação de classes e lógica de negócio.
+
+- JavaFX: Criação de interface gráfica para interação do usuário.
+
+- PostgreSQL: Manipulação de banco de dados relacional.
+
+- JDBC: Conexão entre aplicação Java e banco de dados.
+
+- DAO Pattern: Implementação de CRUD com separação de responsabilidades.
+
+- Arquitetura em Camadas: Estruturação do projeto para manter organização e escalabilidade.
+
+#### <b>Soft Skills</b>
+
+- Liderança: Atuação como Scrum Master, conduzindo a equipe.
+
+- Trabalho em equipe: Colaboração no desenvolvimento conjunto da aplicação.
+
+- Comunicação eficaz: Facilitação do alinhamento entre os membros do time.
+
+- Organização: Estruturação de tarefas dentro de sprints.
+
+- Gestão de tempo: Priorização de demandas e cumprimento de prazos.
+
+- Resolução de problemas: Identificação e superação de impedimentos técnicos.
+
+- Adaptabilidade: Ajustes de planejamento conforme o andamento do projeto.
+
+## 3º - Semestre 2025 - 1
+
+No terceiro semestre, em conjunto com a minha equipe, Steam Ducks, e desafiados pela empresa Altave, desenvolvemos um sistema de controle e registro de ponto de trabalho.
+
+O desenvolvimento do projeto aconteceu em Java e em Vue.js para o front-end. O banco do projeto foi desenvolvido no Supabase, que é baseado no PostgreSQL.
+
+### Contribuições Individuais
 
 <details>
     <summary><b>Identidade Visual</b></summary><br>
@@ -36,10 +94,36 @@ Entre os projetos e atividades realizadas, destacam-se implementações utilizan
             </p>
 </details>
 
-## Aprendizados
+### Aprendizados
 
-Houve aprofundamento em **front-end**, criando interfaces dinâmicas e responsivas, como o espelho de ponto eletrônico e o histórico de alterações em linha do tempo, permitindo consultas detalhadas e rastreabilidade das edições.
+#### <b>Hard Skills</b>
 
-Também se consolidou experiência em **integração front-end/back-end**, conectando Vue.js a endpoints REST em Java, assegurando carregamento dinâmico de dados e atualização correta no banco de dados.
+- Front-end Development: Criação de interfaces dinâmicas e responsivas.
 
-Além disso, durante o desenvolvimento do sistema de ponto eletrônico, foram adquiridos conhecimentos em **identidade visual**, implementando cores, tipografia e componentes do Figma no Vue.js, garantindo consistência entre design e código.
+- Vue.js: Desenvolvimento de aplicações web interativas.
+
+- Integração Front-end/Back-end: Conexão entre Vue.js e APIs REST em Java.
+
+- Java (REST APIs): Consumo e integração de endpoints para manipulação de dados.
+
+- UI/UX Design Implementation: Aplicação de identidade visual (cores, tipografia e componentes).
+
+- Figma to Code: Tradução de protótipos do Figma para componentes Vue.js.
+
+- Versionamento e Rastreabilidade: Implementação de histórico de alterações e linha do tempo.
+
+#### <b>Soft Skills</b>
+
+- Comunicação eficaz: Troca clara de informações durante dailies, reviews e retrospectivas.
+
+- Gestão de tempo: Organização de tarefas e cumprimento de prazos em sprints.
+
+- Adaptabilidade: Capacidade de ajustar prioridades e implementar feedbacks rapidamente.
+
+- Resolução de problemas: Atuação proativa diante de desafios técnicos e funcionais.
+
+- Pensamento crítico: Análise das demandas e impacto das soluções no produto.
+
+- Autonomia e proatividade: Entrega de valor contínua sem necessidade de supervisão constante.
+
+- Colaboração ágil: Aplicação de práticas Scrum (planning, backlog grooming, sprint review).
